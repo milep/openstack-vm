@@ -2,14 +2,13 @@ openstack-vm
 ============
 
 An Openstack development environment. Provides:
-* Vagrant build a virtual machine based on Ubuntu Precise 64
-* Puppet configure the development environment (Devstack, Emacs, Python, ...)
+* [Vagrant](http://www.vagrantup.com/) build a virtual machine based on Ubuntu Precise 64
+* [Ansible](http://www.vagrantup.com/) configure the development environment (Devstack, Emacs, Python, ...)
 
 Install Vagrant
 ---------------
 
     Here : http://www.vagrantup.com
-
 
 Create an instance
 ------------------
@@ -31,3 +30,5 @@ Stop the VM
 -----------
 
     vagrant halt
+
+
