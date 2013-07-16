@@ -1,0 +1,34 @@
+export LC_ALL=fr_FR.UTF-8
+export LANG=_FR.UTF-8
+
+export HOSTNAME=$(hostname)
+export EDITOR=vim
+export HISTTIMEFORMAT="%h/%d - %H:%M:%S "
+
+alias ll='ls -al'
+alias l='ll -tr' 
+alias clean='find . \( -name ".*~" -o -name "*~" -o -name ".saves*" -o -name ".#*" \) -print -exec /bin/rm {} \;'
+
+
+export ANT_HOME=$HOME/Apps/apache-ant-1.9.1
+export M2_HOME=$HOME/Apps/apache-maven-3.0.4
+export JAVA_HOME=$HOME/Apps/jdk1.6.0_26
+export GRADLE_HOME=$HOME/Apps/gradle-1.6/bin
+export IDEA_HOME=$HOME/Apps/idea-IC-129.713/
+
+export PATH=${JAVA_HOME}/bin:$M2_HOME/bin:$ANT_HOME/bin:$PATH
+export PATH=${HOME}/bin:$PATH
+export PATH=${GRADLE_HOME}:$PATH
+export PATH=${IDEA_HOME}/bin:$PATH
+
+alias changelog="cat /etc/ChangeLog"
+alias team="cat /etc/motd"
+
+export WORKON_HOME=$HOME/.virtualenvs
+alias python_venvwrapper="source /usr/local/bin/virtualenvwrapper.sh"
+
+alias vncserveur='x11vnc -no6 -noipv6 -nossl -solid darkblue -noxinerama -noxrandr -modtweak -cursor arrow -noalphablend -ncache 6 -forever -noxdamage -noxdamage -forever'
+
+alias Perso_HOME="$HOME/Perso"
+alias idea="idea.sh 2>&1 >/dev/null &"
+

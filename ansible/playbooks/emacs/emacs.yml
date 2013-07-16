@@ -1,0 +1,11 @@
+---
+- hosts: all
+  sudo: yes
+  tasks:
+    - include: tasks/package.yml
+
+- hosts: all
+  sudo: no
+  tasks:
+    - include: tasks/config.yml
+

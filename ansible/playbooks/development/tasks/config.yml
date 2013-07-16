@@ -1,0 +1,2 @@
+- name: Creates VirtualenvWrapper personal directory
+  action: file path=/home/$user/.virtualenvs state=directory

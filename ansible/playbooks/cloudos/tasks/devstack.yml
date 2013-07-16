@@ -1,0 +1,5 @@
+- name: Setup Devstack
+  action: file path=/home/$user/Cloud/openstack state=directory
+
+- name: Install Devstack
+  git: repo=https://github.com/openstack-dev/devstack.git dest=/home/$user/Cloud/openstack/devstack

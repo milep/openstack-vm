@@ -1,0 +1,8 @@
+- hosts: all
+  sudo: yes
+  tasks:
+    - include: tasks/python.yml
+
+- hosts: all
+  tasks:
+    - include: tasks/config.yml

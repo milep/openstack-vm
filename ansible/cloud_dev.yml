@@ -1,0 +1,10 @@
+#
+# Ansible configuration for Openstack VM
+#
+
+- include: playbooks/base/base.yml
+- include: playbooks/emacs/emacs.yml
+- include: playbooks/vim/vim.yml
+- include: playbooks/cloudos/cloudos.yml
+- include: playbooks/development/development.yml
+

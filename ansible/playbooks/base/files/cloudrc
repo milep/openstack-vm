@@ -1,0 +1,65 @@
+#!/bin/bash
+
+alias vncserveur='x11vnc -no6 -noipv6 -nossl -solid darkblue -noxinerama -noxrandr -modtweak -cursor arrow -noalphablend -ncache 6 -forever -noxdamage -noxdamage -forever'
+
+alias CLOUD_HOME="$HOME/Cloud"
+alias eclipse="eclipse 2>&1 >/dev/null &"
+alias idea="idea.sh 2>&1 >/dev/null &"
+alias tmux_dev="tmux -f $HOME/.tmux-dev.conf attach"
+alias tmux_build="tmux -f $HOME/.tmux-build.conf attach"
+
+alias cloud_sprint="date '+%V'"
+
+# Alias serveurs Cloud
+
+alias cloud_cerbere="ssh root@cloud-cerbere01-prod.bos.cloud.mbs"
+alias cloud_git="ssh root@cloud-git01-prod.bos.cloud.mbs"
+alias cloud_filer="ssh root@cloud-isia01c-prod.boi.cloud.mbs"
+alias cloud_svg="ssh root@cloud-svg01c-prod.bos.cloud.mbs"
+
+alias cloud_dns01_prp="ssh root@cloud-ns01-prp.bop.cloud.mbs"
+alias cloud_dns01_prod="ssh root@cloud-ns01-prod.bos.cloud.mbs"
+alias cloud_dns02_prod="ssh root@cloud-ns02-prod.bos.cloud.mbs"
+
+alias cloud_puppet01_prod="ssh root@cloud-puppet01-prod.bos.cloud.mbs"
+alias cloud_puppet02_prod="ssh root@cloud-puppet02-prod.bos.cloud.mbs"
+alias cloud_puppet01_prp="ssh root@cloud-puppet01-prp.bop.cloud.mbs"
+
+alias cloud_was01_prod="ssh root@cloud-was01-prod.bos.cloud.mbs"
+alias cloud_was02_prod="ssh root@cloud-was02-prod.bos.cloud.mbs"
+alias cloud_was01_prp="ssh root@cloud-was01-prp.bop.cloud.mbs"
+alias cloud_was02_prp="ssh root@cloud-was02-prp.bop.cloud.mbs"
+
+alias cloud_as01_prp="ssh root@cloud-as01-prp.bop.cloud.mbs"
+
+alias cloud_web01_prp="ssh root@cloud-web01-prp.bop.cloud.mbs"
+alias cloud_web01_prod="ssh root@cloud-web01-prod.bos.cloud.mbs"
+alias cloud_web02_prod="ssh root@cloud-web02-prod.bos.cloud.mbs"
+
+alias cloud_sql_prod="ssh root@cloud-sql01c-prod.bos.cloud.mbs"
+alias cloud_sql_prod_slave="ssh root@cloud-sql02c-prod.bos.cloud.mbs"
+alias cloud_sql_prp="ssh root@cloud-sql01-prp.bop.cloud.mbs"
+
+alias cloud_vc_prp="rdesktop -u administrateur -g 1400x1000 cloud-vc01-prp.bos.cloud.mbs"
+alias cloud_vc_prod="rdesktop -u administrateur -g 1400x1000 cloud-vc01-prod.bos.cloud.mbs"
+
+alias cloud_vc_sql_prod="rdesktop -u administrateur -g 1400x1000 cloud-sql01-prod.bos.cloud.mbs"
+
+alias cloud_esx01="ssh root@cloud-hyper01c-prod.bos.cloud.mbs"
+alias cloud_esx02="ssh root@cloud-hyper02c-prod.bos.cloud.mbs"
+alias cloud_esx03="ssh root@cloud-hyper03c-prod.boi.cloud.mbs"
+alias cloud_esx04="ssh root@cloud-hyper04c-prod.boi.cloud.mbs"
+alias cloud_esx05="ssh root@cloud-hyper05c-prod.boi.cloud.mbs"
+alias cloud_esx06="ssh root@cloud-hyper06c-prod.boi.cloud.mbs"
+alias cloud_esx07="ssh root@cloud-hyper07c-prod.boi.cloud.mbs"
+alias cloud_esx08="ssh root@cloud-hyper08c-prod.boi.cloud.mbs"
+alias cloud_esx09="ssh root@cloud-hyper09c-prod.boi.cloud.mbs"
+alias cloud_esx10="ssh root@cloud-hyper10c-prod.boi.cloud.mbs"
+alias cloud_esx11_prp="ssh root@cloud-hyper11c-prp.bop.cloud.mbs"
+alias cloud_esx12_prp="ssh root@cloud-hyper12c-prp.bop.cloud.mbs"
+
+alias cloud_log01_prod="ssh root@cloud-infodip01c-prod.bos.cloud.mbs"
+alias cloud_log02_prod="ssh root@cloud-loghost02-prod.bos.cloud.mbs"
+alias cloud_log01_prp="ssh root@cloud-loghost01-prp.bop.cloud.mbs"
+alias cloud_log02_prp="ssh root@cloud-loghost02-prp.bop.cloud.mbs"
+
