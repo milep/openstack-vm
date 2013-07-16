@@ -3,6 +3,12 @@
 #
 #
 
+- name: Update cache
+  apt: update_cache=yes
+
+- name: Upgrade distribution
+  apt: upgrade=dist
+
 - name: Install defaults packages
   apt: pkg=$item state=present
   with_items:
@@ -63,15 +69,6 @@
     - libmysqlclient-dev
     - mysql-workbench
 
-- name: Install NodeJS Repo
-  apt_repository: repo=ppa:richarvey/nodejs
-
-- name: Update APT for NodeJS
-  apt: update_cache=yes
-
-- name: Install NodeJS
-  apt: pkg=npm state=present
-  
 - name: Install ChangeLog
   copy: >
     src=files/ChangeLog dest=/etc/
@@ -86,3 +83,4 @@
   copy: >
     src=files/sources.list dest=/etc/apt/
     owner=root mode=644
+
