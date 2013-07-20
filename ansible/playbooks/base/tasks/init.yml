@@ -44,6 +44,7 @@
     - python-pip
     - pylint
     - python-pycurl
+    - python-netaddr
 
 - name: Install PHP tools
   apt: pkg=$item state=present
