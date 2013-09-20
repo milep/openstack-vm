@@ -25,16 +25,16 @@ Vagrant.configure("2") do |config|
       vb.name = "OpenStackDev"
     end
 
-    openstack_dev_config.vm.forward_port 80, 8085 # Horizon, port shifting to avoid conflicts with ports on local machine
-    openstack_dev_config.vm.forward_port 8774, 8774 # Compute
-    openstack_dev_config.vm.forward_port 9696, 9696 # Network
-    openstack_dev_config.vm.forward_port 9292, 9292 # Image
-    openstack_dev_config.vm.forward_port 8777, 8777 # Metering
-    openstack_dev_config.vm.forward_port 8776, 8776 # Volume
-    openstack_dev_config.vm.forward_port 5000, 5000 # Identity
-    openstack_dev_config.vm.forward_port 8080, 8086 # Object Store, port shifting to avoid conflicts with ports on local machine
-    openstack_dev_config.vm.forward_port 8773, 8773 # EC2
-    openstack_dev_config.vm.forward_port 3333, 3333 # S3
+    openstack_dev_config.vm.network "forwarded_port", guest: 80, host: 8085 # Horizon, port shifting to avoid conflicts with ports on local machine
+    openstack_dev_config.vm.network "forwarded_port", guest: 8774, host: 8774 # Compute
+    openstack_dev_config.vm.network "forwarded_port", guest: 9696, host: 9696 # Network
+    openstack_dev_config.vm.network "forwarded_port", guest: 9292, host: 9292 # Image
+    openstack_dev_config.vm.network "forwarded_port", guest: 8777, host: 8777 # Metering
+    openstack_dev_config.vm.network "forwarded_port", guest: 8776, host: 8776 # Volume
+    openstack_dev_config.vm.network "forwarded_port", guest: 5000, host: 5000 # Identity
+    openstack_dev_config.vm.network "forwarded_port", guest: 8080, host: 8086 # Object Store, port shifting to avoid conflicts with ports on local machine
+    openstack_dev_config.vm.network "forwarded_port", guest: 8773, host: 8773 # EC2
+    openstack_dev_config.vm.network "forwarded_port", guest: 3333, host: 3333 # S3
 
     openstack_dev_config.vm.provision :ansible do |ansible|
       ansible.playbook = "ansible/openstack_dev.yml"
