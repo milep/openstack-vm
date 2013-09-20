@@ -5,10 +5,14 @@ An Openstack development environment. Provides:
 * [Vagrant](http://www.vagrantup.com/) build a virtual machine based on Ubuntu Precise 64
 * [Ansible](http://www.vagrantup.com/) configure the development environment (Devstack, Emacs, Python, ...)
 
-Install Vagrant
----------------
+Install VirtualBox and Vagrant
+------------------------------
 
-    Here : http://www.vagrantup.com
+* For VirtualBox, follow the instructions :
+    https://www.virtualbox.org/wiki/Linux_Downloads
+
+* For Vagrant;
+    http://www.vagrantup.com
 
 Create an instance
 ------------------

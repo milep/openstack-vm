@@ -8,6 +8,7 @@ Vagrant.configure("2") do |config|
     openstack_dev_config.vm.box_url = "http://files.vagrantup.com/precise64.box"
     openstack_dev_config.vm.hostname = "OpenStackDev"
     openstack_dev_config.vm.network :private_network, :ip => '10.9.9.33'
+    #openstack_dev_config.vm.network :forwarded_port, guest: 80, host: 8888
 
     openstack_dev_config.ssh.forward_agent = true
     openstack_dev_config.ssh.forward_x11 = true
@@ -23,6 +24,17 @@ Vagrant.configure("2") do |config|
       vb.customize ["modifyvm", :id, "--memory", "2048"]
       vb.name = "OpenStackDev"
     end
+
+    openstack_dev_config.vm.forward_port 80, 8085 # Horizon, port shifting to avoid conflicts with ports on local machine
+    openstack_dev_config.vm.forward_port 8774, 8774 # Compute
+    openstack_dev_config.vm.forward_port 9696, 9696 # Network
+    openstack_dev_config.vm.forward_port 9292, 9292 # Image
+    openstack_dev_config.vm.forward_port 8777, 8777 # Metering
+    openstack_dev_config.vm.forward_port 8776, 8776 # Volume
+    openstack_dev_config.vm.forward_port 5000, 5000 # Identity
+    openstack_dev_config.vm.forward_port 8080, 8086 # Object Store, port shifting to avoid conflicts with ports on local machine
+    openstack_dev_config.vm.forward_port 8773, 8773 # EC2
+    openstack_dev_config.vm.forward_port 3333, 3333 # S3
 
     openstack_dev_config.vm.provision :ansible do |ansible|
       ansible.playbook = "ansible/openstack_dev.yml"
