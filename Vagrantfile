@@ -7,8 +7,14 @@ Vagrant.configure("2") do |config|
     openstack_dev_config.vm.box = "precise64"
     openstack_dev_config.vm.box_url = "http://files.vagrantup.com/precise64.box"
     openstack_dev_config.vm.hostname = "OpenStackDev"
-    openstack_dev_config.vm.network :private_network, :ip => '10.9.9.33'
-    #openstack_dev_config.vm.network :forwarded_port, guest: 80, host: 8888
+
+    openstack_dev_config.vm.network :private_network, :ip => '10.10.0.201'
+    # Assign this VM to a host-only network IP, allowing you to access it
+    # via the IP. Host-only networks can talk to the host machine as well as
+    # any other machines on the same network, but cannot be accessed (through this
+    # network interface) by any external networks.
+    # openstack_dev_config.vm.network :hostonly, "172.16.0.201"
+    # openstack_dev_config.vm.network :hostonly, "10.10.0.201"
 
     openstack_dev_config.ssh.forward_agent = true
     openstack_dev_config.ssh.forward_x11 = true
