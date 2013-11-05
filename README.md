@@ -46,15 +46,15 @@ Openstack
 
 * On localrc file, Openstack modules branchs:
 
-        CINDER_BRANCH=stable/grizzly
-		GLANCE_BRANCH=stable/grizzly
-		HORIZON_BRANCH=stable/grizzly
-		KEYSTONE_BRANCH=stable/grizzly
-		KEYSTONECLIENT_BRANCH=stable/grizzly
-		NOVA_BRANCH=stable/grizzly
-		NOVACLIENT_BRANCH=stable/grizzly
-		QUANTUM_BRANCH=stable/grizzly
-		SWIFT_BRANCH=stable/grizzly
+        CINDER_BRANCH=stable/havana
+		GLANCE_BRANCH=stable/havana
+		HORIZON_BRANCH=stable/havana
+		KEYSTONE_BRANCH=stable/havana
+		KEYSTONECLIENT_BRANCH=stable/havana
+		NOVA_BRANCH=stable/havana
+		NOVACLIENT_BRANCH=stable/havana
+		QUANTUM_BRANCH=stable/havana
+		SWIFT_BRANCH=stable/havana
 		...
 
 * Connect to Openstack using [screen](http://www.gnu.org/software/screen/):

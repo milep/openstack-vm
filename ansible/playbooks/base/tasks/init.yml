@@ -45,6 +45,7 @@
     - pylint
     - python-pycurl
     - python-netaddr
+    - software-properties-common
 
 - name: Install PHP tools
   apt: pkg=$item state=present
@@ -74,11 +75,6 @@
   copy: >
     src=files/ChangeLog dest=/etc/
     owner=root mode=644
-
-# - name: Install motd
-#   copy: >
-#     src=files/motd dest=/etc/
-#     owner=root mode=644
 
 - name: Install apt sources.list
   copy: >

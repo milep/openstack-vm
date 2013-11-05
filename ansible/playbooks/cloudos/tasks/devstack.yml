@@ -2,7 +2,7 @@
   action: file path=/home/$user/Cloud/openstack state=directory
 
 - name: Install Devstack
-  git: repo=https://github.com/openstack-dev/devstack.git dest=/home/$user/Cloud/openstack/devstack version=stable/grizzly
+  git: repo=https://github.com/openstack-dev/devstack.git dest=/home/$user/Cloud/openstack/devstack version=stable/havana
 
 - name: Copy localrc
   copy: src=files/localrc dest=/home/$user/Cloud/openstack/devstack/

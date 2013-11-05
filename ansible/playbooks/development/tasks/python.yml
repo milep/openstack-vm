@@ -16,3 +16,7 @@
 - name: Install Fabric
   pip: name=fabric
 
+- name: Install Git Review
+  pip: name=git-review
+
+
