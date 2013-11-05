@@ -5,8 +5,7 @@ An Openstack development environment. Provides:
 * [Vagrant](http://www.vagrantup.com/) build a virtual machine based on Ubuntu Precise 64
 * [Ansible](http://www.vagrantup.com/) configure the development environment (Devstack, Emacs, Python, ...)
 
-Install VirtualBox and Vagrant
-------------------------------
+## Install VirtualBox and Vagrant
 
 * For VirtualBox, follow the instructions :
     https://www.virtualbox.org/wiki/Linux_Downloads
@@ -14,30 +13,21 @@ Install VirtualBox and Vagrant
 * For Vagrant;
     http://www.vagrantup.com
 
-Create an instance
-------------------
+## Create an instance
 
-    $ vagrant up --no-provision
-    $ vagrant ssh
-    $ sudo apt-get update
-    $ sudo apt-get upgrade
-    $ exit
-    $ vagrant provision
+    $ vagrant up
 
-Connect to the instance
------------------------
+## Connect to the instance
 
     $ vagrant ssh
 
 
-Stop the VM
------------
+## Stop the VM
 
     $ vagrant halt
 
 
-Openstack
----------
+## Openstack
 
 * Install Devstack :
 
@@ -67,4 +57,11 @@ Openstack
         $ git clone git://github.com/openstack/tempest
 
 
+## Changelog
+
+A changelog is available [here](ChangeLog.md).
+
+## Contact
+
+Nicolas Lamirault <nicolas.lamirault@gmail.com>
 
