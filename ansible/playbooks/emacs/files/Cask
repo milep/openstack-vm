@@ -1,0 +1,43 @@
+;;; Emacs Cask file
+
+(source "melpa" "http://melpa.milkbox.net/packages/")
+(source "gnu" "http://elpa.gnu.org/packages/")
+(source "marmalade" "http://marmalade-repo.org/packages/")
+
+;; Misc
+(depends-on "cask")
+(depends-on "auto-complete") ;; "20130724.1750")
+(depends-on "markdown-mode")
+(depends-on "puppet-mode")
+(depends-on "sr-speedbar")
+(depends-on "yaml-mode")
+(depends-on "flycheck")
+
+;; Go lang
+(depends-on "go-mode")
+(depends-on "go-play") ;; "20120914.2148")
+(depends-on "go-autocomplete") ;; "20130809.1451")
+(depends-on "go-eldoc") ;; "20131029.1013")
+(depends-on "flymake-go") ;; "20130314.1541")
+
+
+;; Python
+(depends-on "python-mode") ;; "6.0.10")
+(depends-on "jedi") ;; "20130714.1415")
+(depends-on "elpy") ;; "20130809.1821")
+(depends-on "tox")
+
+;; Ruby
+(depends-on "ruby-mode") ;; "1.1")
+
+;; Web
+(depends-on "web-mode") ;; "20131028.1439")
+(depends-on "php-mode") ;; "20131029.1345")
+
+;; Other development mode
+
+;; Utilities
+(depends-on "pkg-info") ;; "0.3")
+(depends-on "magit")
+(depends-on "projectile")
+

@@ -1,6 +1,9 @@
+- name: add the emacs-snapshot PPA
+  apt_repository: repo=ppa:cassou/emacs
+
 - name: Update repositories
   apt: update_cache=yes
 
-- name: Install Emacs 24
-  apt: pkg=emacs24 state=installed
+- name: Install Emacs Snapshot
+  apt: pkg=emacs-snapshot-gtk state=present
 
