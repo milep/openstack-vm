@@ -1,11 +1,11 @@
 openstack-vm ChangeLog
 ======================
 
-# Version 0.1.0
+Version 0.1.0 (IN PROGRESS)
+---------------------------
 
-`` IN PROGRESS``
-
+- TravisCI configuration
 - Add Emacs configuration
-- Add Devstack setup
-- Init Ansible provisioning
+- Init Devstack setup
+- Ansible provisioning
 - Vagrant file to configure a virtual machine
