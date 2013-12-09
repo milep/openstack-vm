@@ -1,4 +1,4 @@
-script: ./divona.sh travis
+script: ./ci/travis.sh
 before_install:
     - sudo apt-get update
     - sudo apt-get install ansible
