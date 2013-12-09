@@ -6,38 +6,38 @@
 
 ;; Misc
 (depends-on "cask")
-(depends-on "auto-complete") ;; "20130724.1750")
+(depends-on "auto-complete")
 (depends-on "markdown-mode")
 (depends-on "puppet-mode")
 (depends-on "sr-speedbar")
 (depends-on "yaml-mode")
-(depends-on "flycheck")
+;;(depends-on "flycheck")
 
 ;; Go lang
 (depends-on "go-mode")
-(depends-on "go-play") ;; "20120914.2148")
-(depends-on "go-autocomplete") ;; "20130809.1451")
-(depends-on "go-eldoc") ;; "20131029.1013")
-(depends-on "flymake-go") ;; "20130314.1541")
+(depends-on "go-play")
+(depends-on "go-autocomplete")
+(depends-on "go-eldoc")
+(depends-on "flymake-go")
 
 
 ;; Python
-(depends-on "python-mode") ;; "6.0.10")
-(depends-on "jedi") ;; "20130714.1415")
-(depends-on "elpy") ;; "20130809.1821")
+(depends-on "python-mode")
+(depends-on "jedi")
+(depends-on "elpy")
 (depends-on "tox")
 
 ;; Ruby
-(depends-on "ruby-mode") ;; "1.1")
+(depends-on "ruby-mode")
 
 ;; Web
-(depends-on "web-mode") ;; "20131028.1439")
-(depends-on "php-mode") ;; "20131029.1345")
+(depends-on "web-mode")
+(depends-on "php-mode")
 
 ;; Other development mode
 
 ;; Utilities
-(depends-on "pkg-info") ;; "0.3")
+(depends-on "pkg-info")
 (depends-on "magit")
 (depends-on "projectile")
 
