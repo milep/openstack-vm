@@ -1,0 +1,23 @@
+language: ruby
+rvm:
+  - "1.9.3"
+before_install:
+  - sudo apt-get update
+  - sudo apt-cache search linux-headers-virtual
+  - sudo apt-get -y install linux-headers-virtual
+  - sudo echo "deb http://download.virtualbox.org/virtualbox/debian precise contrib" | sudo tee -a /etc/apt/sources.list
+  - wget http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc -O- | sudo apt-key add -
+  - sudo apt-get update
+  - sudo apt-get -y install virtualbox-4.2
+  - sudo /etc/init.d/vboxdrv setup
+  - VBoxManage -v
+  - wget http://files.vagrantup.com/packages/0219bb87725aac28a97c0e924c310cc97831fd9d/vagrant_1.2.4_i686.deb
+  - sudo dpkg -i vagrant_1.2.4_i686.deb
+script:
+  - sudo /opt/vagrant/bin/vagrant up
+  - ls
+  - sudo /opt/vagrant/bin/vagrant ssh --command "touch /vagrant/smash_it_with_a_hammer"
+  - ls
+after-script:
+  - sudo /opt/vagrant/bin/vagrant halt
+  - sudo /opt/vagrant/bin/vagrant destroy
