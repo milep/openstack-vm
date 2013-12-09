@@ -1,6 +1,9 @@
 openstack-vm
 ============
 
+[![Build Status](https://travis-ci.org/nlamirault/openstack-vm.png)](https://travis-ci.org/nlamirault/openstack-vm)
+
+
 An Openstack development environment. Provides:
 * [Vagrant](http://www.vagrantup.com/) build a virtual machine based on Ubuntu Precise 64
 * [Ansible](http://www.vagrantup.com/) configure the development environment (Devstack, Emacs, Python, ...)
