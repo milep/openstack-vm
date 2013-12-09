@@ -1,7 +1,7 @@
 openstack-vm ChangeLog
 ======================
 
-Version 0.1.0 (IN PROGRESS)
+Version 0.1.0 (2013-12-09)
 ---------------------------
 
 - TravisCI configuration
